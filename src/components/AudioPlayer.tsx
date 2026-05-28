@@ -107,18 +107,22 @@ const AudioPlayer = () => {
           <div className="flex items-center justify-center gap-6">
             <button
               onClick={handlePrev}
+              aria-label="Pista anterior"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <SkipBack className="w-5 h-5" />
             </button>
             <button
               onClick={() => setIsPlaying(!isPlaying)}
+              aria-label={isPlaying ? "Pausar" : "Reproducir"}
+              aria-pressed={isPlaying}
               className="w-14 h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:scale-105 transition-transform border-glow-blue"
             >
               {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6 ml-0.5" />}
             </button>
             <button
               onClick={handleNext}
+              aria-label="Pista siguiente"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <SkipForward className="w-5 h-5" />
