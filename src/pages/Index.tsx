@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import SoraSection from "@/components/SoraSection";
 import ServicesSection from "@/components/ServicesSection";
 import AudioPlayer from "@/components/AudioPlayer";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,6 +13,7 @@ const Index = () => {
         <SoraSection />
         <ServicesSection />
         <AudioPlayer />
+        <ContactSection />
       </main>
       <Footer />
     </div>
@@ -19,3 +21,4 @@ const Index = () => {
 };
 
 export default Index;
+
